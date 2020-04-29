@@ -7,6 +7,7 @@ import { FormattedCodeBlock } from './formatted-code-block';
 import style from './style';
 
 const blogs = (props) => {
+	debugger;
 	const [data, isLoading] = usePrerenderData(props);
 	return (
 		<article class={style.blogcontainer}>
@@ -16,6 +17,7 @@ const blogs = (props) => {
 };
 
 function CodeBlock(props) {
+	debugger;
 	const fallback = <pre><code>{props.children}</code></pre>;
 	if (typeof window === 'undefined') {
 		return (fallback);

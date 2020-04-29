@@ -18,7 +18,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown"}
   - name: "homepageSections"
     label: "homepageSections"
-    label_singular: "homepageSection" # Used in the UI, ie: "New Post"
+    label_singular: "new section" # Used in the UI, ie: "New Post"
     folder: "content/homepage"
     create: true
     fields:

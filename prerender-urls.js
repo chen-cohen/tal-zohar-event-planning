@@ -3,15 +3,15 @@ const { join } = require('path');
 const fs = require('fs');
 const parseMD = require('parse-md').default;
 
-const [blogs] = generateFileList(join(__dirname, 'content')).nodes;
+const [blogs, homepage] = generateFileList(join(__dirname, 'content')).nodes;
 module.exports = () => {
 	const pages = [
-		{
-			url: '/',
-			seo: {
-				cover: '/assets/profile.jpg'
-			}
-		},
+		// {
+		// 	url: '/',
+		// 	seo: {
+		// 		cover: '/assets/profile.jpg'
+		// 	}
+		// },
 		{ url: '/contact/' },
 		{ url: '/contact/success' }
 	];
@@ -21,7 +21,6 @@ module.exports = () => {
 		url: '/blogs/',
 		data: blogs
 	});
-
 	// adding all blog pages
 	pages.push(...blogs.edges.map(blog => {
 		let data;
@@ -40,6 +39,11 @@ module.exports = () => {
 			}
 		};
 	}));
+
+	pages.push({
+		url: '/',
+		data: homepage
+	})
 
 	return pages;
 };

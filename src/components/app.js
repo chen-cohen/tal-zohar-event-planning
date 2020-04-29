@@ -10,6 +10,7 @@ import Blog from '../routes/blog';
 import Contact from '../routes/contact';
 import ContactSuccess from '../routes/contact-success';
 import NotFoundPage from '../routes/notfound';
+import Homepage from "../routes/homepage";
 
 export default class App extends Component {
 
@@ -27,7 +28,7 @@ export default class App extends Component {
 				<div id="app">
 					<Header />
 					<Router onChange={this.handleRoute}>
-						<Home path="/" />
+						<Homepage path="/" />
 						<Blogs path="/blogs/" />
 						<Blog path="/blog/:name" />
 						<Contact path="/contact/" />
