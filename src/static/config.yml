@@ -16,4 +16,13 @@ collections:
       - { label: "Cover", name: "cover", widget: "image", required: false}
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown"}
+  - name: "homepageSections"
+    label: "homepageSections"
+    label_singular: "homepageSection" # Used in the UI, ie: "New Post"
+    folder: "content/homepage"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Cover", name: "cover", widget: "image", required: false}
+      - { label: "Body", name: "body", widget: "markdown"}
 
