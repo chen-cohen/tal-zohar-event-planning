@@ -22,6 +22,7 @@ const Homepage = (props) => {
     if (data && data.data) {
         const content = data.data;
         const section1 = content.edges[0].details
+        const section2 = content.edges[1].details
         return (
 			// <section id="intro">
 			// </section>
@@ -29,10 +30,11 @@ const Homepage = (props) => {
 
             // <div>
 				<div id="intro" class={style.intro}>
-					<h1 style={"text-align: center;color: white;"}>
-						{section1.body}
-					</h1>
-					{/*{<div class={style.intro} style={`background-image:url(${content.edges[0].details.cover})`}/>}*/}
+					{/*<h1 style={"text-align: center;color: white;"}>*/}
+					{/*	{section1.body}*/}
+					{/*</h1>*/}
+					{<div class={style.intro} style={`background-image:url(${section1.cover})`}/>}
+                    {<div class={style.intro} style={`background-image:url(${section2.cover})`}/>}
 				</div>
 
 
