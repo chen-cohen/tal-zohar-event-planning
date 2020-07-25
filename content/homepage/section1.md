@@ -1,5 +1,5 @@
 ---
 title: section1
-cover: /assets/img1.jpg
+cover: /assets/1.jpg
 ---
-LIVE*laugh
+LIVE\*LAUGTH\*LOVE
