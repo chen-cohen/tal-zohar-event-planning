@@ -1,5 +1,5 @@
 ---
 title: section2
-cover: /assets/img3.jpg
+cover: /assets/3.jpg
 ---
 section2
